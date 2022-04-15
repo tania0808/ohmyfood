@@ -1,60 +1,1276 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-menu-item__text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` conmenu-item__texts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* menu-item__text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct menu-item__text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  menu-item__text-decoration: underline;
+  /* 2 */
+  menu-item__text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+menu-item__textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of menu-item__text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of menu-item__text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  menu-item__text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted Buttonmenu-item__text; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the menu-item__text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+item {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+menu-item__textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: menu-item__textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
 /*
-Error: File to import not found or unreadable: ./components/buttons.
-        on line 3 of ./sass/main.scss
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
 
-1: @import './base/reset';
-2: @import './base/typography';
-3: @import './components/buttons';
-4: @import './layout/footer';
-5: @import './layout/header';
-6: @import './pages/home';
-7: @import './pages/restaurant';
-8: @import './utils/animations';
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
 
-Backtrace:
-./sass/main.scss:3
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ./components/buttons.\A         on line 3 of ./sass/main.scss\A \A 1: @import './base/reset';\A 2: @import './base/typography';\A 3: @import './components/buttons';\A 4: @import './layout/footer';\A 5: @import './layout/header';\A 6: @import './pages/home';\A 7: @import './pages/restaurant';\A 8: @import './utils/animations';"; }
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+footer {
+  height: 150px;
+  margin-bottom: 0;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px; }
+  footer img {
+    width: 100px;
+    height: 20px;
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
+    filter: invert(100%); }
+  footer .footer-navigation {
+    width: 90%; }
+    footer .footer-navigation ul {
+      padding: 0; }
+      footer .footer-navigation ul li {
+        padding: 5px 0;
+        list-style-type: none; }
+        footer .footer-navigation ul li a {
+          text-decoration: none;
+          color: #fff; }
+          footer .footer-navigation ul li a:hover {
+            text-decoration: underline; }
+          footer .footer-navigation ul li a .footer-icon {
+            width: 20px;
+            padding-right: 2px; }
+          footer .footer-navigation ul li a:hover {
+            color: #fff; }
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .header__icon {
+    width: 70px;
+    position: absolute;
+    left: 30px;
+    color: black; }
+  .header__image {
+    width: 170px; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-menu-item__text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` conmenu-item__texts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* menu-item__text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct menu-item__text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  menu-item__text-decoration: underline;
+  /* 2 */
+  menu-item__text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+menu-item__textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of menu-item__text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of menu-item__text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  menu-item__text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted Buttonmenu-item__text; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the menu-item__text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+item {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+menu-item__textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: menu-item__textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+@keyframes appear-main-content {
+  0%, 50%, 75% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+@keyframes loading-spinner {
+  0%, 100% {
+    font-size: 26px; }
+  25%, 75% {
+    font-size: 28px; }
+  50% {
+    font-size: 30px; } }
+@keyframes fill-gradient {
+  0% {
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0; }
+  100% {
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1; } }
+@keyframes menu-item-appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(-19px); } }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+h1, h2 {
+  font-size: 24px; }
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: appear-main-content 3s ease-in-out forwards;
+  background-color: #fff;
+  z-index: 999;
+  transition: 3s ease-in-out; }
+  .loader-wrapper .loader {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 26px;
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1; }
+    .loader-wrapper .loader span {
+      padding-right: 5px; }
+      .loader-wrapper .loader span:nth-child(1) {
+        animation: loading-spinner 1s 0.17s forwards; }
+      .loader-wrapper .loader span:nth-child(2) {
+        animation: loading-spinner 1s 0.34s forwards; }
+      .loader-wrapper .loader span:nth-child(3) {
+        animation: loading-spinner 1s 0.51s forwards; }
+      .loader-wrapper .loader span:nth-child(4) {
+        animation: loading-spinner 1s 0.68s forwards; }
+      .loader-wrapper .loader span:nth-child(5) {
+        animation: loading-spinner 1s 0.85s forwards; }
+      .loader-wrapper .loader span:nth-child(6) {
+        animation: loading-spinner 1s 1.02s forwards; }
+      .loader-wrapper .loader span:nth-child(7) {
+        animation: loading-spinner 1s 1.19s forwards; }
+      .loader-wrapper .loader span:nth-child(8) {
+        animation: loading-spinner 1s 1.36s forwards; }
+
+.position {
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .position i {
+    padding-right: 20px; }
+
+.explore {
+  background-color: #f6f6f6;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px; }
+  .explore p {
+    font-weight: 300; }
+  .explore .btn {
+    color: #fff;
+    padding: 15px;
+    background: linear-gradient(180deg, #d76ddb 35%, #9356dc 100%);
+    outline: none;
+    border: none;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.205) 0px 4px 12px; }
+    .explore .btn:hover {
+      filter: brightness(1.1);
+      box-shadow: rgba(0, 0, 0, 0.304) 2px 6px 14px; }
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px; }
+  .functioning h2 {
+    align-self: flex-start; }
+  .functioning .functioning-card:hover .functioning-card__icon {
+    color: #9356DC; }
+  .functioning-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .functioning-container .functioning-card {
+      width: 100%;
+      max-width: 450px;
+      height: 80px;
+      background: #f6f6f6;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 18px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      margin-top: 20px;
+      padding-right: 28px;
+      padding-left: 15px;
+      position: relative; }
+      .functioning-container .functioning-card:hover {
+        background: #f5edff; }
+      .functioning-container .functioning-card__number {
+        width: 27px;
+        height: 27px;
+        background-color: #9356DC;
+        color: #fff;
+        font-weight: 400 !important;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -11px; }
+      .functioning-container .functioning-card__icon {
+        font-size: 22px;
+        color: dimgrey; }
+      .functioning-container .functioning-card p {
+        font-weight: 500;
+        font-size: 15px; }
+
+#restaurant-list {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px; }
+  #restaurant-list h2 {
+    align-self: flex-start; }
+  #restaurant-list .restaurants {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; }
+    #restaurant-list .restaurants-card {
+      width: 100%;
+      height: 250px;
+      background-color: #fff;
+      text-decoration: none;
+      color: black;
+      border-radius: 15px;
+      position: relative;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; }
+      #restaurant-list .restaurants-card:hover {
+        color: black; }
+      #restaurant-list .restaurants-card__label {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+        background-color: #99e2d0;
+        color: #008766;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 3px; }
+      #restaurant-list .restaurants-card__image {
+        width: 100%;
+        height: calc(100% - 75px);
+        object-fit: cover;
+        border-radius: 15px 15px 0 0; }
+      #restaurant-list .restaurants-card__info {
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px; }
+        #restaurant-list .restaurants-card__info--description {
+          text-decoration: none;
+          height: 100%;
+          font-weight: 300;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: stretch; }
+          #restaurant-list .restaurants-card__info--description p {
+            margin-top: 5px; }
+        #restaurant-list .restaurants-card__info--like .fa {
+          font-weight: 400;
+          font-size: 25px;
+          padding: 2px; }
+          #restaurant-list .restaurants-card__info--like .fa:hover {
+            font-weight: 900;
+            animation: fill-gradient 1s;
+            animation-fill-mode: forwards; }
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif; }
+
+main {
+  background-color: #F6F6F6; }
+  main .background {
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55% 60%; }
+  main .range_of_taste {
+    background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg); }
+  main .the_note {
+    background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg); }
+  main .french_style {
+    background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg); }
+  main .delight_of_meaning {
+    background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg); }
+  main .container {
+    height: fit-content;
+    background-color: #F6F6F6;
+    margin-top: -80px;
+    border-radius: 40px 40px 0px 0px;
+    padding-bottom: 40px; }
+    main .container__heading {
+      display: flex;
+      flex-direction: 0;
+      justify-content: space-between;
+      align-items: 0;
+      padding: 20px 30px; }
+      main .container__heading h1 {
+        font-family: "Shrikhand", sans-serif;
+        font-size: 30px; }
+      main .container__heading .fa {
+        font-weight: 400;
+        font-size: 25px;
+        padding: 2px; }
+        main .container__heading .fa:hover {
+          font-weight: 900;
+          animation: fill-gradient 1s;
+          animation-fill-mode: forwards; }
+    main .container .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      main .container .menu-field {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: 0;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px; }
+        main .container .menu-field h2 {
+          font-size: 20px;
+          font-weight: 300;
+          align-self: baseline;
+          text-transform: uppercase; }
+          main .container .menu-field h2::after {
+            content: "";
+            display: block;
+            width: 52px;
+            padding-top: 5px;
+            border-bottom: 4px solid #99E2D0; }
+        main .container .menu-field .menu-item {
+          display: flex;
+          width: 100%;
+          height: 70px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          position: relative;
+          border-radius: 10px;
+          background-color: #fff;
+          overflow: hidden; }
+          main .container .menu-field .menu-item__text {
+            width: 100%;
+            font-size: 21px;
+            display: flex;
+            transition: all 1s;
+            padding: 8px 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis !important;
+            overflow: hidden; }
+            main .container .menu-field .menu-item__text--desc {
+              width: 85%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: 0; }
+              main .container .menu-field .menu-item__text--desc h3 {
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+                font-size: 18px;
+                white-space: nowrap;
+                text-overflow: ellipsis !important;
+                overflow: hidden; }
+              main .container .menu-field .menu-item__text--desc p {
+                margin: 0;
+                font-size: 15px;
+                font-weight: 200;
+                white-space: nowrap;
+                text-overflow: ellipsis !important;
+                overflow: hidden; }
+            main .container .menu-field .menu-item__text--price {
+              width: 15%;
+              display: flex;
+              flex-direction: 0;
+              justify-content: end;
+              align-items: 0;
+              align-self: end;
+              font-size: 16px;
+              font-weight: 600;
+              margin-right: 10px; }
+          main .container .menu-field .menu-item:hover .menu-item__text {
+            width: 75%; }
+            main .container .menu-field .menu-item:hover .menu-item__text p, main .container .menu-field .menu-item:hover .menu-item__text h3 {
+              white-space: nowrap;
+              text-overflow: ellipsis !important;
+              overflow: hidden;
+              transition: all 1s; }
+          main .container .menu-field .menu-item:hover .menu-item__button {
+            height: 71px;
+            background-color: #99E2D0;
+            transform: scaleX(1);
+            display: flex;
+            flex-direction: 0;
+            justify-content: center;
+            align-items: center; }
+            main .container .menu-field .menu-item:hover .menu-item__button-icon {
+              animation: rotate 1s; }
+          main .container .menu-field .menu-item__button {
+            display: flex;
+            flex-direction: 0;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            transform-origin: right;
+            padding-bottom: 1px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: all 1s cubic-bezier(0.32, 0, 0.07, 1); }
+            main .container .menu-field .menu-item__button-icon {
+              color: #fff; }
+  main .command {
+    display: flex;
+    flex-direction: 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px; }
+    main .command .restaurant-btn {
+      color: #fff;
+      padding: 15px;
+      background: linear-gradient(180deg, #d76ddb 35%, #9356dc 100%);
+      outline: none;
+      border: none;
+      border-radius: 22px;
+      box-shadow: rgba(0, 0, 0, 0.205) 0px 4px 12px;
+      width: 200px; }
+      main .command .restaurant-btn:hover {
+        filter: brightness(1.1);
+        box-shadow: rgba(0, 0, 0, 0.304) 2px 6px 14px; }
+      main .command .restaurant-btn:hover {
+        filter: brightness(1.1); }
+  main .apetizers {
+    animation: menu-item-appear 1s;
+    animation-delay: 0;
+    animation-fill-mode: both; }
+  main .dishes {
+    animation: menu-item-appear 1s;
+    animation-delay: 450ms;
+    animation-fill-mode: both; }
+  main .desserts {
+    animation: menu-item-appear 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both; }
+
+@keyframes appear-main-content {
+  0%, 50%, 75% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+@keyframes loading-spinner {
+  0%, 100% {
+    font-size: 26px; }
+  25%, 75% {
+    font-size: 28px; }
+  50% {
+    font-size: 30px; } }
+@keyframes fill-gradient {
+  0% {
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0; }
+  100% {
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1; } }
+@keyframes menu-item-appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(-19px); } }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@media (min-width: 768px) {
+  .functioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 90px 20px; }
+    .functioning-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+      .functioning-container .functioning-card {
+        width: 50%;
+        padding-right: 10px; }
+
+  #restaurant-list {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; }
+    #restaurant-list h2 {
+      align-self: flex-start; }
+    #restaurant-list .restaurants {
+      width: 100%;
+      justify-content: space-around; }
+      #restaurant-list .restaurants-card {
+        width: 45%; }
+
+  main .container .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0px;
+    flex-wrap: wrap; }
+    main .container .menu-field {
+      width: 45%;
+      padding: 0px 15px; }
+    main .container .menu .the-note-dishes {
+      gap: 40px; }
+    main .container .menu .desserts {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      main .container .menu .desserts h2 {
+        flex: 0 0 100%; }
+        main .container .menu .desserts h2::after {
+          content: "";
+          display: block;
+          width: 7%;
+          padding-top: 5px;
+          border-bottom: 4px solid #99E2D0; }
+      main .container .menu .desserts .item {
+        flex: 1;
+        width: 30%; } }
+@media (min-width: 992px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0; }
+    footer img {
+      width: 143px;
+      height: 20px;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+      padding-top: 1;
+      padding-top: 20px; }
+    footer .footer-navigation ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-around; }
+
+  .functioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .functioning-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: space-around; }
+      .functioning-container .functioning-card {
+        max-width: 350px; }
+
+  #restaurant-list {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; }
+    #restaurant-list h2 {
+      align-self: flex-start; }
+    #restaurant-list .restaurants {
+      margin-top: 50px;
+      padding-bottom: 60px;
+      width: 100%;
+      justify-content: space-around;
+      gap: 0; }
+      #restaurant-list .restaurants-card {
+        width: 23%; }
+
+  main .background {
+    height: 35vh; }
+  main .container .menu {
+    flex-wrap: nowrap; }
+    main .container .menu-field {
+      width: 30%; }
+    main .container .menu .desserts {
+      width: 30% !important; } }
+@media (min-width: 1400px) {
+  header, main, footer, section {
+    width: 90% !important;
+    max-width: 1400px;
+    margin: 0 auto; }
+
+  #restaurant-list {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 20px 20px; }
+
+  .position {
+    border-radius: 20px 20px 0 0; }
+
+  .explore {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0 0 20px 20px; }
+
+  h2 {
+    margin-left: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
