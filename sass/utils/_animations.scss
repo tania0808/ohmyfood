@@ -1,0 +1,49 @@
+@keyframes appear-main-content {
+    0%, 50%, 75% {
+        opacity: 1;
+    }
+    100% {
+       opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes loading-spinner {
+    0%, 100% {
+        font-size: 26px;
+    }
+    25%, 75% {
+        font-size: 28px;
+    }
+    50% {
+        font-size: 30px;
+    }
+}
+
+@keyframes fill-gradient {
+    0% {
+        @include heart-fill(0);
+    }
+    100% {
+        @include heart-fill(1);     
+    }
+}
+
+@keyframes menu-item-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-19px);
+    } 
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }  
+}

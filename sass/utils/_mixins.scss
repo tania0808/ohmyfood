@@ -1,0 +1,129 @@
+// @import './utils/animations';
+@import'./variables';
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin main-button {
+    color: #fff;
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(215,109,219,1) 35%, rgba(147,86,220,1) 100%);
+    outline: none;
+    border: none;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.205) 0px 4px 12px;
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: rgba(0, 0, 0, 0.304) 2px 6px 14px;
+    }
+}
+
+@mixin link($color) {
+    text-decoration: none;
+    color: $color;
+    &:hover {
+        color: $color;
+    }
+}
+
+@mixin border-radius($size) {
+    border-radius: $size;
+}
+
+@mixin heart-fill($opacity) {
+    background: -moz-linear-gradient(top, #9356DC  0%,  #FF79DA 100%); 
+    background: -webkit-linear-gradient(top, #9356DC  0%, #FF79DA 100%); 
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%); 
+    -webkit-background-clip:text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: $opacity;
+}
+
+
+@mixin letter-spin {
+    @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+            animation: loading-spinner 1s #{$i * 0.17}s forwards;
+        }
+    }
+}
+
+
+@mixin heart-style ($init-color, $font-size, $end-color) {
+    .fa {
+        font-weight: $init-color;
+        font-size: $font-size;
+        padding: 2px;
+        &:hover {
+            font-weight: $end-color;
+            animation: fill-gradient 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+
+@mixin text-elipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    overflow: hidden; 
+    
+}
+
+@mixin menu-appear($delay) {
+    animation: menu-item-appear 1s;
+    animation-delay: $delay;
+    animation-fill-mode: both;
+}
+
+// @mixin heart-style ($font-size) {
+//     .fa {
+//         font-weight: $regular;
+//         font-size: $font-size;
+//         padding: 2px;
+//         &:hover {
+//             font-weight: $solid;
+//             animation: fill-gradient 1s;
+//             animation-fill-mode: forwards;
+//         }
+//     }
+// }
+        // @mixin flex-row-center {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+        // @mixin flex-column-center {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+        
+        // @mixin flex-space-around {
+        //     display: flex;
+        //     justify-content: space-around;
+        //     align-items: center;
+        // }
+        // @mixin flex-space-between {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        // }
+        // @mixin flex-column-between {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        // }
+        // @mixin flex-column {
+        //     display: flex;
+        //     flex-direction: column;
+        // }

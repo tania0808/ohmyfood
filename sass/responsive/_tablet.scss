@@ -1,0 +1,74 @@
+@media (min-width: 768px) {
+    .functioning {
+        @include flex(column, center, center);
+        padding: 60px 20px 90px 20px;
+        &-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            .functioning-card {
+                width: 50%;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    #restaurant-list {
+        background-color: $grey2;
+        @include flex(column, center, center);
+        padding: 50px 20px;
+        
+        h2 {
+            align-self: flex-start;
+        }
+    
+        .restaurants {
+            width: 100%;
+            justify-content: space-around;
+            &-card {
+                    width: 45%;
+            }
+        }
+    
+    }
+    main {
+        .container {
+            .menu {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 10px 0px;
+                flex-wrap: wrap;
+                &-field {
+                    width: 45%;
+                    padding: 0px 15px;
+                }
+                .the-note-dishes {
+                    gap: 40px;
+                }
+                .desserts {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    h2 {
+                        flex: 0 0 100%;
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 7%;
+                            padding-top: 5px;
+                            border-bottom: 4px solid #99E2D0;
+                        }
+                    }
+                    .item {
+                        flex: 1;
+                        width: 30%;
+                    }
+                }
+            }
+
+        }
+    }
+}

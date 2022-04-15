@@ -1,0 +1,174 @@
+
+@import '../utils/mixins';
+
+body {
+    position: relative;
+    font-family: $font-text;
+}
+
+main{
+    background-color: $background-grey;
+    .background {
+        height: 40vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 55% 60%;
+    }
+    .range_of_taste {
+        background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    }
+    .the_note {
+        background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+    .french_style {
+        background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+    .delight_of_meaning {
+        background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+    .container {
+        height: fit-content;
+        background-color: $background-grey;
+        margin-top: -80px;
+        border-radius: 40px 40px 0px 0px;
+        padding-bottom: 40px;
+        &__heading {
+            @include flex(0, space-between, 0);
+            padding: 20px 30px;
+            h1 {
+                font-family: $font-heading;
+                font-size: 30px;
+            }
+            @include heart-style($regular, 25px, $solid);
+        }
+
+        .menu {
+            width: 100%;
+            @include flex(column, space-between, center);
+            &-field {
+                width: 90%;
+                @include flex(column, 0, center);
+                gap: 20px;
+                margin-top: 40px;
+                h2 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    align-self: baseline;
+                    text-transform: uppercase;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 52px;
+                        padding-top: 5px;
+                        border-bottom: 4px solid #99E2D0;
+                    }
+                }
+                
+                .menu-item {
+                    display: flex;
+                    width: 100%;
+                    height: 70px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                    position: relative;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    overflow: hidden;
+                    &__text {
+                        width: 100%;
+                        font-size: 21px;
+                        display: flex;
+                        transition: all 1s;
+                        padding: 8px 10px;
+                        @include text-elipsis;
+                        &--desc {
+                            width: 85%;
+                            height: 100%;
+                            @include flex(column, space-between, 0);                      
+                            h3 {
+                                font-family: $font-text;
+                                margin: 0;
+                                font-size: 18px;
+                                @include text-elipsis;
+                            }
+                            p {
+                                margin: 0;
+                                font-size: 15px;
+                                font-weight: 200;
+                                @include text-elipsis;
+                            }
+                            
+                        }
+                        &--price {
+                            width: 15%;
+                            @include flex(0, end, 0);
+                            align-self: end;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-right: 10px;
+                        }
+                    }
+                    
+                    &:hover {
+                        .menu-item__text{
+                            width: 75%;
+                            p, h3 {
+                                @include text-elipsis;
+                                transition: all 1s;
+                            }  
+                        }
+
+                    }
+                    
+                    &:hover {
+                        .menu-item__button {
+                            height: 71px;
+                            background-color: #99E2D0;
+                            transform: scaleX(1);
+                            @include flex(0, center, center);
+                            &-icon {
+                                animation: rotate 1s ;
+                            }
+                        }
+                    }
+
+                    &__button {
+                        @include flex(0, center, center);
+                        width: 50px;
+                        height: 100%;
+                        transform-origin: right;
+                        padding-bottom: 1px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        transform: scaleX(0);
+                        transition: all 1s cubic-bezier(.32, 0, .07, 1);
+                        &-icon {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .command {
+        @include flex(0, center, center);
+        padding-bottom: 20px;
+        .restaurant-btn{
+            @include main-button;
+            width: 200px;
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
+    .apetizers{
+        @include menu-appear(0)
+    }
+    .dishes{
+        @include menu-appear(450ms)
+    }
+    .desserts{
+        @include menu-appear(1s)
+    }
+}
