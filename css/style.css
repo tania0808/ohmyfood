@@ -10,7 +10,7 @@
 html {
   line-height: 1.15;
   /* 1 */
-  -webkit-menu-item__text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
 /* Sections
@@ -74,9 +74,9 @@ a {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  menu-item__text-decoration: underline;
+  text-decoration: underline;
   /* 2 */
-  menu-item__text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -165,7 +165,7 @@ input {
 button,
 select {
   /* 1 */
-  menu-item__text-transform: none; }
+  text-transform: none; }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
@@ -193,7 +193,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted Buttonmenu-item__text; }
+  outline: 1px dotted Buttontext; }
 
 /**
  * Correct the padding in Firefox.
@@ -363,7 +363,7 @@ footer {
 html {
   line-height: 1.15;
   /* 1 */
-  -webkit-menu-item__text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
 /* Sections
@@ -427,9 +427,9 @@ a {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  menu-item__text-decoration: underline;
+  text-decoration: underline;
   /* 2 */
-  menu-item__text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -518,7 +518,7 @@ input {
 button,
 select {
   /* 1 */
-  menu-item__text-transform: none; }
+  text-transform: none; }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
@@ -546,7 +546,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted Buttonmenu-item__text; }
+  outline: 1px dotted Buttontext; }
 
 /**
  * Correct the padding in Firefox.
@@ -937,9 +937,9 @@ main {
     padding-bottom: 40px; }
     main .container__heading {
       display: flex;
-      flex-direction: 0;
+      flex-direction: row;
       justify-content: space-between;
-      align-items: 0;
+      align-items: stretch;
       padding: 20px 30px; }
       main .container__heading h1 {
         font-family: "Shrikhand", sans-serif;
@@ -962,7 +962,7 @@ main {
         width: 90%;
         display: flex;
         flex-direction: column;
-        justify-content: 0;
+        justify-content: flex-start;
         align-items: center;
         gap: 20px;
         margin-top: 40px; }
@@ -1001,7 +1001,7 @@ main {
               display: flex;
               flex-direction: column;
               justify-content: space-between;
-              align-items: 0; }
+              align-items: stretch; }
               main .container .menu-field .menu-item__text--desc h3 {
                 font-family: "Roboto", sans-serif;
                 margin: 0;
@@ -1019,9 +1019,9 @@ main {
             main .container .menu-field .menu-item__text--price {
               width: 15%;
               display: flex;
-              flex-direction: 0;
+              flex-direction: row;
               justify-content: end;
-              align-items: 0;
+              align-items: stretch;
               align-self: end;
               font-size: 16px;
               font-weight: 600;
@@ -1038,14 +1038,14 @@ main {
             background-color: #99E2D0;
             transform: scaleX(1);
             display: flex;
-            flex-direction: 0;
+            flex-direction: row;
             justify-content: center;
             align-items: center; }
             main .container .menu-field .menu-item:hover .menu-item__button-icon {
               animation: rotate 1s; }
           main .container .menu-field .menu-item__button {
             display: flex;
-            flex-direction: 0;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             width: 50px;
@@ -1062,7 +1062,7 @@ main {
               color: #fff; }
   main .command {
     display: flex;
-    flex-direction: 0;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px; }
@@ -1082,7 +1082,7 @@ main {
         filter: brightness(1.1); }
   main .apetizers {
     animation: menu-item-appear 1s;
-    animation-delay: 0;
+    animation-delay: 0s;
     animation-fill-mode: both; }
   main .dishes {
     animation: menu-item-appear 1s;
@@ -1198,9 +1198,10 @@ main {
         width: 30%; } }
 @media (min-width: 992px) {
   footer {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
     padding: 0; }
     footer img {
@@ -1208,12 +1209,14 @@ main {
       height: 20px;
       -webkit-filter: invert(100%);
       filter: invert(100%);
-      padding-top: 1;
+      padding-top: 1px;
       padding-top: 20px; }
     footer .footer-navigation ul {
       padding: 0;
       display: flex;
-      justify-content: space-around; }
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch; }
 
   .functioning {
     display: flex;
@@ -1224,8 +1227,9 @@ main {
       width: 100%;
       display: flex;
       flex-direction: row;
-      gap: 20px;
-      justify-content: space-around; }
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px; }
       .functioning-container .functioning-card {
         max-width: 350px; }
 
@@ -1266,10 +1270,12 @@ main {
   #restaurant-list {
     padding-left: 0;
     padding-right: 0;
-    border-radius: 20px 20px; }
+    border-radius: 20px 20px 0px 0px; }
 
   .position {
-    border-radius: 20px 20px 0 0; }
+    border-radius: 20px 20px 0 0;
+    width: 90%;
+    margin: 0 auto; }
 
   .explore {
     padding-left: 0;

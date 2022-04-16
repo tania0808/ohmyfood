@@ -10,7 +10,7 @@
 
  html {
     line-height: 1.15; /* 1 */
-    -webkit-menu-item__text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
   }
   
   /* Sections
@@ -84,8 +84,8 @@
   
   abbr[title] {
     border-bottom: none; /* 1 */
-    menu-item__text-decoration: underline; /* 2 */
-    menu-item__text-decoration: underline dotted; /* 2 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
   }
   
   /**
@@ -185,7 +185,7 @@
   
   button,
   select { /* 1 */
-    menu-item__text-transform: none;
+    text-transform: none;
   }
   
   /**
@@ -219,7 +219,7 @@
   [type="button"]:-moz-focusring,
   [type="reset"]:-moz-focusring,
   [type="submit"]:-moz-focusring {
-    outline: 1px dotted Buttonmenu-item__text;
+    outline: 1px dotted Buttontext;
   }
   
   /**
