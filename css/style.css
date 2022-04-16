@@ -1250,7 +1250,9 @@ main {
     main .container .menu-field {
       width: 30%; }
     main .container .menu .desserts {
-      width: 30% !important; } }
+      width: 30% !important; }
+    main .container .menu .the-note-desserts {
+      gap: 40px; } }
 @media (min-width: 1400px) {
   header, main, footer, section {
     width: 90% !important;

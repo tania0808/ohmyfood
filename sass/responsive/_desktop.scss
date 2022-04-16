@@ -22,7 +22,6 @@
 
     .functioning {
         @include flex(column, center, center);
-    
         &-container {
             width: 100%;
             display: flex;
@@ -39,11 +38,9 @@
         background-color: $grey2;
         @include flex(column, center, center);
         padding: 50px 20px;
-        
         h2 {
             align-self: flex-start;
         }
-    
         .restaurants {
             margin-top: 50px;
             padding-bottom: 60px;
@@ -54,8 +51,8 @@
                     width: 23%;
             }       
         }
-    
     }
+
     main {
         .background {
             height: 35vh;
@@ -63,17 +60,17 @@
         .container {
             .menu {
                 flex-wrap: nowrap;
-        
                 &-field {
                     width: 30%;
                 }
                 .desserts {
                     width: 30% !important;
                 }
+                .the-note-desserts {
+                    gap: 40px;
+                }
             }
-    
         }
-
     }
 }
 
@@ -83,14 +80,17 @@
         max-width: 1400px;
         margin: 0 auto;
     }
+
     #restaurant-list{
         padding-left: 0;
         padding-right: 0;
         border-radius: 20px 20px;
     }
+
     .position {
         border-radius: 20px 20px 0 0;
     }
+    
     .explore {
         padding-left: 0;
         padding-right: 0;
