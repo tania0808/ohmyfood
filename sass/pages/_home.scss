@@ -128,6 +128,11 @@ h1, h2, h3, h4 {
             @include border-radius(15px);
             position: relative;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            transition: 0.5s;
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.251) 0px 4px 12px;
+                transform: translateY(-5px);
+            }
             &__label {
                 position: absolute;
                 top: 15px;
