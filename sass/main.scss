@@ -1,11 +1,15 @@
 @import './base/reset';
 @import './base/typography';
+
 @import './layout/footer';
 @import './layout/header';
+@import './layout/tablet';
+@import './layout/desktop';
+
 @import './pages/home';
 @import './pages/restaurant';
+
 @import './utils/animations';
 @import './utils/mixins';
 @import './utils/variables';
-@import './responsive/tablet';
-@import './responsive/desktop';
+
