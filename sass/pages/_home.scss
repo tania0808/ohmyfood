@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
     transition: 3s ease-in-out;
 
     .loader {
-        @include heart-fill(1);
+        @include background-fill(1);
 
         font-family: $font-heading;
         font-size: 26px;

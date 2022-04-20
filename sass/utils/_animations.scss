@@ -22,10 +22,10 @@
 
 @keyframes fill-gradient {
     0% {
-        @include heart-fill(0);
+        @include background-fill(0);
     }
     100% {
-        @include heart-fill(1);     
+        @include background-fill(1);     
     }
 }
 

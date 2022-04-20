@@ -143,20 +143,6 @@ main{
 
                     }
                     
-                    &:hover {
-                        .menu-item__button {
-                            @include flex(row, center, center);
-
-                            height: 71px;
-                            background-color: #99E2D0;
-                            transform: scaleX(1);
-
-                            &-icon {
-                                animation: rotate 1s ;
-                            }
-                        }
-                    }
-
                     &__button {
                         @include flex(row, center, center);
 
@@ -175,6 +161,21 @@ main{
                             color: #fff;
                         }
                     }
+
+                    &:hover {
+                        .menu-item__button {
+                            @include flex(row, center, center);
+
+                            height: 71px;
+                            background-color: #99E2D0;
+                            transform: scaleX(1);
+
+                            &-icon {
+                                animation: rotate 1s ;
+                            }
+                        }
+                    }
+
                 }
             }
         }
